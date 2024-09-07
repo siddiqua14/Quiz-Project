@@ -1,0 +1,113 @@
+/* Background theme */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Quiz container styling */
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    border: 3px solid #343a40;
+    background-image: linear-gradient(to bottom right, #ffffff, #e9ecef);
+}
+#timer {
+    font-size: 18px;
+    color: #dc3545;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Question text */
+#question {
+    font-size: 22px;
+    color: #343a40;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Choices button styling */
+.choices {
+    margin-bottom: 25px;
+}
+
+.choice {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.choice:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Next button styling */
+#nextButton {
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#nextButton:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Score container styling */
+#scoreContainer {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .quiz-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #question {
+        font-size: 18px;
+    }
+
+    .choice {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    #nextButton {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    #scoreContainer {
+        font-size: 18px;
+    }
+}
